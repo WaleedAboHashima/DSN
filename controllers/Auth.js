@@ -147,4 +147,19 @@ const UpdatePassword = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
-module.exports = { createAcount, login, ForgetPassword, VerifyTheOtp, UpdatePassword };
+
+const textFucntion = async (req, res) => {
+  res.status(200).json([
+    { name: waleed, age: 21 },
+    { name: omar, age: 22 },
+    { name: zizo, age: 2 },
+  ]);
+};
+module.exports = {
+  createAcount,
+  login,
+  ForgetPassword,
+  VerifyTheOtp,
+  UpdatePassword,
+  textFucntion,
+};
