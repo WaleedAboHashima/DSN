@@ -150,9 +150,9 @@ const UpdatePassword = async (req, res) => {
 
 const textFucntion = async (req, res) => {
   res.status(200).json([
-    { name: waleed, age: 21 },
-    { name: omar, age: 22 },
-    { name: zizo, age: 2 },
+    { name: "waleed", age: 21 },
+    { name: "omar", age: 22 },
+    { name: "zizo", age: 2 },
   ]);
 };
 module.exports = {
